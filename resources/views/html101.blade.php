@@ -1,34 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>Workshop HTML</title>
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <title>Bootstrap Datepicker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop HTML - Bootstrap Datepicker</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Bootstrap Datepicker CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class = " container pt-5">
-        <h1>Workshop #HTML - FORM</h1>
+    <div class="container pt-5 text-center">
+        <h1 class="mb-3">ฟอร์มสมัคร</h1>
+
         <form>
-        
+            <!-- แถว: ชื่อ -->
+            <div class="row g-3 align-items-center mb-3">
+                <div class="col-4">
+                    <label for="fname" class="col-form-label">ชื่อ</label>
+                </div>
+                <div class="col-6">
+                    <input type="text" id="fname" class="form-control" placeholder = "ชื่อ">
+                </div>
+            </div>
+
+            <!-- แถว: นามสกุล -->
+            <div class="row g-3 align-items-center mb-3">
+                <div class="col-4">
+                    <label for="lname" class="col-form-label">นามสกุล</label>
+                </div>
+                <div class="col-6">
+                    <input type="text" id="lname" class="form-control" placeholder = "นามสกุล">
+                </div>
+            </div>
+
+            <!-- แถว: เลือกวันที่ -->
+            <div class="row g-3 align-items-center mb-3">
+                <div class="col-4">
+                    <label for="myDatepicker" class="col-form-label">วันที่</label>
+                </div>
+                <div class="col-6">
+                    <input type="text" class="form-control" id="myDatepicker" placeholder="วัน/เดือน/ปี">
+                </div>
+            </div>
+            
+            <!-- แถว อายุ -->
+            <div class="row g-3 align-items-center mb-3">
+                <div class="col-4">
+                    <label for="fname" class="col-form-label">อายุ</label>
+                </div>
+                <div class="col-6">
+                    <input type="text" id="fname" class="form-control" placeholder = "อายุ">
+                </div>
+            </div>
+            <!-- เพศ -->
+           <div class="row g-3 align-items-center mb-3">
+    <div class="col-4">
+        <label for="lname" class="col-form-label">เพศ</label>
     </div>
-    <div class="row g-3 align-items-center">
-<div class="col-4">
-    <label for="fname" class="col-form-label">ชื่อ</label>
+
+    <div class="col-6 text-end">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">ชาย</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">หญิง</label>
+        </div>
+    </div>
+</div>    
+
+<div class="row g-3 align-items-center mb-3">
+    <div class="col-4">
+        <label for="image" class="col-form-label">รูป</label>
+    </div>
+
+    <div class="col-6">
+        <input class="form-control" type="file" id="image">
+    </div>
+</div>
+
+<!-- แถว: ที่อยู่ -->
+<div class="row g-3 align-items-start mb-3">
+    <div class="col-4">
+        <label for="address" class="col-form-label">ที่อยู่</label>
+    </div>
+    <div class="col-6">
+        <textarea id="address" class="form-control" rows="3"></textarea>
+    </div>
+</div>
+
+<!-- แถว: สีที่ชอบ -->
+<div class="row g-3 align-items-center mb-3">
+    <div class="col-4">
+        <label for="color" class="col-form-label">สีที่ชอบ</label>
+    </div>
+    <div class="col-6">
+        <select id="color" class="form-select">
+            <option>สีแดง</option>
+            <option>สีน้ำเงิน</option>
+            <option>สีเขียว</option>
+        </select>
+    </div>
+</div>
+
+<div class="row g-3 align-items-center mb-3">
+    <div class="col-4">
+        <label for="lname" class="col-form-label">แนวเพลงที่ชอบ</label>
+    </div>
+
+    <div class="col-6 text-end">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">ลูกทุ่ง</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">เพื่อชีวิต</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">อื่นๆ</label>
+        </div>
+    </div>
+</div>    
+<div class="align-items-center ">
+    <div class="col-12">
+  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+  <label class="form-check-label" for="checkDefault">
+    ยินยอมให้เก็บข้อมูล
+  </label>
+</div>
+    
+            
+            <!-- ปุ่มส่งฟอร์ม -->
+             <div class="row">
+            <div class="col-6">
+        <button type="submit" class="btn btn-primary mt-3">Reset</button>
     </div>
 <div class="col-6">
-    <input type="text" id="fname" class="form-control">
+        <button type="submit" class="btn btn-primary mt-3">ส่งฟอร์ม</button>
+        </div>
     </div>
-<div class="col-4">
-    <label for="inputPassword6" class="col-form-label">นามสกุล</label>
-  </div>
-  <div class="col-6">
-    <input type="password" id="inputPassword6" class="form-control">
-  </div>
+
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -37,21 +157,14 @@
     <!-- Bootstrap Datepicker JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
-    <div class="container mt-3">
-        <div class="col-4">
-    <label for="myDatepicker">Select Date:</label>
-    <input type="text" class="form-control" id="myDatepicker">
-        <script>
-    $(document).ready(function(){
-        $('#myDatepicker').datepicker({
-            format: 'dd/mm/yyyy', // Customize date format
-            autoclose: true,     // Close the datepicker when a date is selected
-            todayHighlight: true // Highlight today's date
+    <script>
+        $(document).ready(function(){
+            $('#myDatepicker').datepicker({
+                format: 'dd/mm/yyyy',   // รูปแบบวันที่
+                autoclose: true,        // เลือกวันแล้วปิดเอง
+                todayHighlight: true    // ไฮไลต์วันที่วันนี้
+            });
         });
-    });
     </script>
-</div>
-</div>
-</div>
 </body>
 </html>
