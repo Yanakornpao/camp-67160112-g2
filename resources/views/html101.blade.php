@@ -15,7 +15,7 @@
     <div class="container pt-5 text-center">
         <h1 class="mb-3">ฟอร์มสมัคร</h1>
 
-        <form>
+        <form class="needs-validation" novalidate>
             <!-- แถว: ชื่อ -->
             <div class="row g-3 align-items-center mb-3">
                 <div class="col-4">
@@ -23,6 +23,9 @@
                 </div>
                 <div class="col-6">
                     <input type="text" required id="fname" class="form-control" placeholder = "ชื่อ">
+                    <div class="invalid-feedback" >
+                        กรุณากรอกชื่อ
+                    </div>
                 </div>
             </div>
 
@@ -32,7 +35,10 @@
                     <label for="lname" class="col-form-label">นามสกุล</label>
                 </div>
                 <div class="col-6">
-                    <input type="text" id="lname" class="form-control" placeholder = "นามสกุล">
+                    <input type="text" required id="lname" class="form-control" placeholder = "นามสกุล">
+                    <div class="invalid-feedback" >
+                        กรุณากรอกนามสกุล
+                    </div>
                 </div>
             </div>
 
@@ -42,17 +48,23 @@
                     <label for="myDatepicker" class="col-form-label">วันที่</label>
                 </div>
                 <div class="col-6">
-                    <input type="text" class="form-control" id="myDatepicker" placeholder="วัน/เดือน/ปี">
+                    <input type="text" required class="form-control" id="myDatepicker" placeholder="วัน/เดือน/ปี">
+                    <div class="invalid-feedback" >
+                        กรุณาเลือกวันที่
+                    </div>
                 </div>
             </div>
 
             <!-- แถว อายุ -->
             <div class="row g-3 align-items-center mb-3">
                 <div class="col-4">
-                    <label for="fname" class="col-form-label">อายุ</label>
+                    <label for="old" class="col-form-label">อายุ</label>
                 </div>
                 <div class="col-6">
-                    <input type="text" id="fname" class="form-control" placeholder = "อายุ">
+                    <input type="text" required id="old" class="form-control" placeholder = "อายุ">
+                    <div class="invalid-feedback" >
+                        กรุณากรอกอายุ
+                    </div>
                 </div>
             </div>
             <!-- เพศ -->
@@ -63,24 +75,27 @@
 
     <div class="col-6 text-end">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <input class="form-check-input" required type="radio" name="Male" id="inlineRadio1" value="option1">
             <label class="form-check-label" for="inlineRadio1">ชาย</label>
         </div>
 
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <input class="form-check-input" required type="radio" name="Woman" id="inlineRadio2" value="option2">
             <label class="form-check-label" for="inlineRadio2">หญิง</label>
         </div>
     </div>
 </div>
-
+            <!-- แถว: รูป -->
 <div class="row g-3 align-items-center mb-3">
     <div class="col-4">
         <label for="image" class="col-form-label">รูป</label>
     </div>
 
     <div class="col-6">
-        <input class="form-control" type="file" id="image">
+        <input class="form-control" required type="file" id="image">
+        <div class="invalid-feedback" >
+                    กรุณาอัพโหลดรูป
+        </div>
     </div>
 </div>
 
@@ -90,7 +105,10 @@
         <label for="address" class="col-form-label">ที่อยู่</label>
     </div>
     <div class="col-6">
-        <textarea id="address" class="form-control" rows="3"></textarea>
+        <textarea id="address" required class="form-control" rows="3"></textarea>
+        <div class="invalid-feedback" >
+                    กรุณาใส่ที่อยู่
+        </div>
     </div>
 </div>
 
@@ -100,14 +118,15 @@
         <label for="color" class="col-form-label">สีที่ชอบ</label>
     </div>
     <div class="col-6">
-        <select id="color" class="form-select">
+        <select id="color" required class="form-select">
+            <option value="" selected disabled>-- เลือกสีที่ชอบ --</option>
             <option>สีแดง</option>
             <option>สีน้ำเงิน</option>
             <option>สีเขียว</option>
         </select>
     </div>
 </div>
-
+<!-- แถว: แนวเพลงที่ชอบ -->
 <div class="row g-3 align-items-center mb-3">
     <div class="col-4">
         <label for="lname" class="col-form-label">แนวเพลงที่ชอบ</label>
@@ -115,24 +134,25 @@
 
     <div class="col-6 text-end">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <input class="form-check-input" required type="radio" name="inlineRadioOptions1" id="inlineRadio1" value="option1">
             <label class="form-check-label" for="inlineRadio1">ลูกทุ่ง</label>
         </div>
 
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <input class="form-check-input" required type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
             <label class="form-check-label" for="inlineRadio2">เพื่อชีวิต</label>
         </div>
 
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">อื่นๆ</label>
+            <input class="form-check-input" required type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3">อื่นๆ</label>
         </div>
     </div>
 </div>
+<!-- แถว: ยินยอมให้เก็บข้อมูล -->
 <div class="align-items-center ">
     <div class="col-12">
-  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+  <input class="form-check-input" required type="checkbox" value="" id="checkDefault">
   <label class="form-check-label" for="checkDefault">
     ยินยอมให้เก็บข้อมูล
   </label>
@@ -142,7 +162,7 @@
             <!-- ปุ่มส่งฟอร์ม -->
              <div class="row">
             <div class="col-6">
-        <button type="submit" class="btn btn-primary mt-3">Reset</button>
+        <button type="reset" class="btn btn-primary mt-3">Reset</button>
     </div>
 <div class="col-6">
         <button type="submit" class="btn btn-primary mt-3">ส่งฟอร์ม</button>
@@ -166,5 +186,22 @@
             });
         });
     </script>
+
+    <script>
+(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
 </body>
 </html>
