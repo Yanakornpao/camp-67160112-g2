@@ -75,12 +75,12 @@
 
     <div class="col-6 text-end">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" required type="radio" name="Male" id="inlineRadio1" value="option1">
+            <input class="form-check-input" required type="radio" name="gender" id="inlineRadio1" value="option1">
             <label class="form-check-label" for="inlineRadio1">ชาย</label>
         </div>
 
         <div class="form-check form-check-inline">
-            <input class="form-check-input" required type="radio" name="Woman" id="inlineRadio2" value="option2">
+            <input class="form-check-input" required type="radio" name="gender" id="inlineRadio2" value="option2">
             <label class="form-check-label" for="inlineRadio2">หญิง</label>
         </div>
     </div>
@@ -139,12 +139,12 @@
         </div>
 
         <div class="form-check form-check-inline">
-            <input class="form-check-input" required type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2">
+            <input class="form-check-input" required type="radio" name="inlineRadioOptions1" id="inlineRadio2" value="option2">
             <label class="form-check-label" for="inlineRadio2">เพื่อชีวิต</label>
         </div>
 
         <div class="form-check form-check-inline">
-            <input class="form-check-input" required type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option3">
+            <input class="form-check-input" required type="radio" name="inlineRadioOptions1" id="inlineRadio3" value="option3">
             <label class="form-check-label" for="inlineRadio3">อื่นๆ</label>
         </div>
     </div>
