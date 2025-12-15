@@ -124,6 +124,9 @@
             <option>สีน้ำเงิน</option>
             <option>สีเขียว</option>
         </select>
+        <div class="invalid-feedback" >
+                    กรุณาเลือกสีที่ชอบ
+        </div>
     </div>
 </div>
 <!-- แถว: แนวเพลงที่ชอบ -->
